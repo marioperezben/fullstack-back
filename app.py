@@ -1,4 +1,4 @@
-""" API """ 
+""" API """
 from flask import Flask, redirect
 from flask import request
 from persistencia import guardar_pedido
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/pizza", methods=["POST"])
 def hello_post():
-    """ Funcion hello post """ 
+    """ Funcion hello post """
     nombre = request.form['p1']
     apellido = request.form['p2']
     guardar_pedido(nombre,apellido)
