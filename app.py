@@ -21,6 +21,5 @@ def checksize():
     if tamano=="S":
         mensaje = "No diponible"
         return Response(mensaje, 200, {'Access-Control-Allow-Origin':'*'})
-    else:
-        mensaje = "Disponible"
-        return Response(mensaje, 200, {'Access-Control-Allow-Origin':'*'})
+    mensaje = "Disponible"
+    return Response(mensaje, 200, {'Access-Control-Allow-Origin':'*'})
